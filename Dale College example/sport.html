@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport | Dale College Boys' High School</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- React & Tailwind -->
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --dale-red: #8B0000;
+            --dale-black: #111111;
+            --dale-gold: #C5A059;
+            --dale-gray: #F5F5F7;
+        }
+    }
+    @layer base {
+        body { font-family: 'Inter', sans-serif; @apply text-slate-800 antialiased bg-white; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        .font-display { font-family: 'Cinzel', serif; }
+    }
+    @layer components {
+        .btn { @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium transition-all duration-300 ease-out border border-transparent rounded-sm; }
+        .btn-primary { @apply bg-[var(--dale-red)] text-white hover:bg-red-900 shadow-lg hover:shadow-xl uppercase tracking-widest; }
+        .btn-outline { @apply border-white text-white hover:bg-white hover:text-[var(--dale-black)] uppercase tracking-widest; }
+        .section-padding { @apply py-20 md:py-32; }
+        .container-custom { @apply max-w-7xl mx-auto px-6 md:px-12; }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/CheckerboardSection.js"></script>
+    <script type="text/babel" src="sport-app.js"></script>
+</body>
+</html>

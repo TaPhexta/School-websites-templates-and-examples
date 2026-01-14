@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boarding | Dale College</title>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+    @layer theme { :root { --dale-red: #8B0000; --dale-black: #111111; --dale-gold: #C5A059; } }
+    @layer base {
+        body { font-family: 'Inter', sans-serif; @apply text-slate-800 antialiased bg-white; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+        .font-display { font-family: 'Cinzel', serif; }
+    }
+    @layer components {
+        .btn { @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium transition-all duration-300 ease-out border border-transparent rounded-sm; }
+        .btn-primary { @apply bg-[var(--dale-red)] text-white hover:bg-red-900 shadow-lg hover:shadow-xl uppercase tracking-widest; }
+        .container-custom { @apply max-w-7xl mx-auto px-6 md:px-12; }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="boarding-app.js"></script>
+</body>
+</html>
